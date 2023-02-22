@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="barraNavegacion">
+                <li><a href="inicio.html" class="nombrePagina">AniMang.</a></li>
+                <li><a class="menu" href="./inicio.html">Inicio</a></li>
+                <li> <a class="menu" href="../index.html">Anime</a> </li>
+                <li><a class="menu" href="../paginas/manga.html">Manga</a></li>
+                <li><a class="menu" href="./galeria.html">Galeria</a></li>
+                <li> <a class="menu" href="./novedades.html">Novedades</a> </li>
+                <li> <a class="menu" href="./contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Se parte de nuestra comunidad.</h1>
+    <main class="contacto">
+        <form action="required">
+            <fieldset>
+                <legend>Completa la siguiente informacion.</legend>
+                <div><label for="nombre">Cual es tu nombre?</label> <br>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+
+                <div>
+                    <label for="pais">Cual es tu pais?</label> <br>
+                    <select name="pais" id="pais" required>
+                        <option value="ven" >Venezuela</option>
+                        <option value="col">Colombia</option>
+                        <option value="arg">Argentina</option>
+                        <option value="mex">Mexico</option>
+                        <option value="chi">Chile</option>
+                        <option value="ecua">Ecuador</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="phone">Cual es tu numero celular</label> <br>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="fnac">Cual es tu fecha de nacimiento?</label> <br>
+                    <input type="date" name="fnac" id="fnac" required>
+                </div>
+                <div>
+                    <label for="correo">Cual es tu correo electronico?</label> <br>
+                    <input type="email" name="correo" id="correo">
+                </div>
+                <div>
+                    <label for="comentario">Dejanos tu comentario</label> <br>
+                    <textarea name="comentario" id="comentario" cols="50" rows="5"
+                        placeholder="Como podemos mejorar?"></textarea>
+                </div>
+                <div>
+                    <h2>Como nos encontraste</h2>
+                    <input type="checkbox" name="insta" id="insta">
+                    <label for="insta">Instagram</label> <br>
+                    <input type="checkbox" name="face" id="face">
+                    <label for="face">Facebook</label> <br>
+                    <input type="checkbox" name="twi" id="twi">
+                    <label for="twi">Twiter</label> <br>
+                    <input type="checkbox" name="telegram" id="telegram">
+                    <label for="telegram">Telegram</label> <br>
+                </div>
+                <div>
+                    <h3>Actualizaciones</h3>
+                    <input type="radio" name="news" id="15">
+                    <label for="15">15 dias</label>
+                    <input type="radio" name="news" id="30">
+                    <label for="30">30 dias</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="siguenos">
+        <section>Siguenos</section>
+        <a class="pieDePagina" href="https://www.facebook.com" target="_blank">
+            <img src="../img/icons8-facebook.svg" alt="Logo Facebook" width="30px" height="30">
+        </a>
+        <a class="pieDePagina" href="https://twitter.com" target="_blank"><img src="../img/icons8-twitter.svg"
+                alt="Logo Twitter" width="30px" height="30px"></a>
+        <a class="pieDePagina" href="https://www.instagram.com" target="_blank"><img src="../img/icons8-instagram.svg"
+                alt="Logo instragram" width="30px" height="30px"></a>
+        <a class="pieDePagina" href="./contacto.html"><img src="../img/arriba.png" alt="flecha hacia arriba"
+                width="25px" height="25px"></a>
+
+
+    </footer>
+</body>
+
+</html>

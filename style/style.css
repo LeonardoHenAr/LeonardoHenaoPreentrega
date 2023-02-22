@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+    
+
+body {
+    background-color: darkgoldenrod;
+    padding: 2px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: justify;
+    font-size: 17px;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color: whitesmoke;
+}
+
+header {
+    padding: 10px;
+    background-color: #35a9e2;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: sticky;
+    top: 1px;
+}
+
+
+.logo {
+    position: fixed;
+    right: 50px;
+}
+
+.logo{
+    height: 15px;
+    width: 20px;
+    transition: all 2s;
+}
+
+.logo:hover{
+    transform: rotate(90deg) scale(2) translateY(90px);
+    }
+
+.nombrePagina{
+    position: fixed;
+    left: 12px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    text-decoration: none;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 25px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+.menu:hover{
+    color: greenyellow;
+}
+
+.enlaceExterno {
+    Text-decoration: none;
+    color: black;
+    
+}
+
+.enlaceExterno:hover{
+    color:greenyellow;
+}
+
+.barraNavegacion{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.imagenes {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.medieval {
+    flex-direction: column;
+    text-align: center;
+    border: solid;
+    flex-wrap: wrap;
+    width: 440px;
+    height: 980px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tituloAnime {
+    text-align: center;
+}
+
+.lineado {
+    padding: 2px;
+    background-color: #35a9e2;
+    border-color: #35a9e2;
+    margin-top: 25px;
+}
+
+.pieDePagina {
+    display: flex;
+
+}
+
+.siguenos {
+    display: flex;
+    justify-content: right;
+}
+
+.tabla {
+    display: flex;
+    justify-content: center;
+
+}
+
+.tabla,
+th,
+td {
+    border: 1px solid blanchedalmond;
+    border-collapse: collapse;
+}
+
+.th,
+td {
+    padding: 05px;
+}
+
+.galerias {
+    display: inline-flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 250px;
+    height: 500;
+}
+
+.mangaGaleria {
+    border: solid 1px whitesmoke;
+    width: 250px;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.imagenGaleria {
+    width: 100%;
+}
+
+#sipnosis{
+    width: 200px;
+    flex-direction: column;
+    margin: 15px;
+    padding: 5px;
+    justify-content: center;
+    
+}
+
+.grillaGaleria{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "mangaGaleria mangaGaleria mangaGaleria"
+    "mangaGaleria mangaGaleria mangaGaleria"
+    "mangaGaleria mangaGaleria mangaGaleria";
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 10% 30% 30% 30%;
+}
+
+.grillaGaleria h1{
+    grid-area: titulo;
+} 
+
+.grillaGaleria .mangaGaleria1{
+    grid-area: imagen-uno;
+}
+
+.grillaGaleria .mangaGaleria2{
+    grid-area: imagen-dos;
+}
+
+.grillaGaleria .mangaGaleria3{
+    grid-area: imagen-tres;
+}
+
+.grillaGaleria .mangaGaleria4{
+    grid-area: imagen-cuatro;
+}
+
+.grillaGaleria .mangaGaleria5{
+    grid-area: imagen-cinco;
+}
+
+.grillaGaleria .mangaGaleria6{
+    grid-area: imagen-seis;
+}
+
+.grillaGaleria .mangaGaleria7{
+    grid-area: imagen-siete;
+}
+
+.grillaGaleria .mangaGaleria8{
+    grid-area: imagen-ocho;
+}
+
+.grillaGaleria .mangaGaleria9{
+    grid-area: imagen-nueve;
+}
+
+
+
+.cuadro {
+    border: solid 1px whitesmoke;
+    width: 335px;
+    flex-direction: row;
+    margin: 15px auto;
+}
+
+.contacto{
+    margin: 10px;
+
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+    color: greenyellow;
+    background-color: #35a9e2;
+}
+
+#boton{
+    background-color: #35a9e2;
+    color: aliceblue;
+    margin: 100px 30px 5px 100px;
+    padding: 10px;
+    flex-direction: column
+}
+
+.carrusel{
+    width: 50%; height: 70%; overflow: hidden; margin: 0px auto;
+}
+
+.carrusel ul{ display: flex;     animation:cambio 10s infinite alternate linear;width: 350%; 
+}  
+
+.carrusel li{ width: 100%; list-style-type: none;   
+} 
+
+.carrusel img{ height: 100%; width: 80%; margin: 25px;
+} 
+
+@keyframes cambio{ 
+    0%{ margin-left: 0%;}     
+    20%{ margin-left: 0%;}     
+    25%{ margin-left: -100%;}     
+    45%{ margin-left: -100%;}     
+    50%{ margin-left: -200%;}     
+    70%{ margin-left: -200%;}     
+    75%{ margin-left: -300%;}     
+    100%{ margin-left: -300%;} 
+}
+
+.introducion{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "carrusel carrusel"
+    "anime manga";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 60% 25%;
+}
+.introducion h1{
+    grid-area: titulo;
+}
+
+.carrusel{
+    grid-area: carrusel;
+}
+
+.parrafoUno{
+    grid-area: anime; border: solid 1px
+    black; 
+    margin: 05px;
+    padding: 10px;
+    height: 200px;
+    justify-content: center;
+    font-size: 14.5px;
+}
+
+.parrafoDos{
+    grid-area: manga;
+    border: solid 1px black; 
+    margin: 05px;
+    padding: 10px;
+    height: 200px;
+    justify-content: center;
+    
+}
