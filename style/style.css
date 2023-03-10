@@ -1,441 +1,472 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.navegacion_movile{
-    display: none;
-
+.navegacion_movile {
+  display: none;
 }
-    
 
 body {
-    background-color: darkgoldenrod;
-    padding: 2px;
+  background-color: darkgoldenrod;
+  padding: 2px;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    text-align: justify;
-    font-size: 17px;
-    line-height: normal;
-    letter-spacing: normal;
-    word-spacing: normal;
-    color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-align: justify;
+  font-size: 17px;
+  line-height: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+  color: whitesmoke;
 }
 
 header {
-    padding: 10px;
-    background-color: #35a9e2;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    position: sticky;
-    top: 1px;
+  padding: 10px;
+  background-color: #35a9e2;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: sticky;
+  top: 1px;
 }
-
 
 .logo {
-    position: fixed;
-    right: 50px;
+  position: fixed;
+  right: 50px;
 }
 
-.logo{
-    height: 15px;
-    width: 20px;
-    transition: all 2s;
+.logo {
+  height: 15px;
+  width: 20px;
+  transition: all 2s;
 }
 
-.logo:hover{
-    transform: rotate(90deg) scale(2) translateY(90px);
-    }
+.logo:hover {
+  transform: rotate(90deg) scale(2) translateY(90px);
+}
 
-.nombrePagina{
-    position: fixed;
-    left: 12px;
-    font-size: 20px;
-    font-family: sans-serif;
-    color: white;
-    text-decoration: none;
+.nombrePagina {
+  position: fixed;
+  left: 12px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
 }
 
 .menu {
-    text-decoration: none;
-    flex-direction: column;
-    color: white;
-    position: relative;
-    border: none;
-    outline: none;
-    text-align: center;
-    margin: 25px;
-    padding: 5px;
-    cursor: pointer;
-    
+  text-decoration: none;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 25px;
+  padding: 5px;
+  cursor: pointer;
 }
 
-.menu:hover{
-    color: greenyellow;
+.menu:hover {
+  color: greenyellow;
 }
 
 .enlaceExterno {
-    Text-decoration: none;
-    color: black;
-    
+  Text-decoration: none;
+  color: black;
 }
 
-.enlaceExterno:hover{
-    color:greenyellow;
+.enlaceExterno:hover {
+  color: greenyellow;
 }
 
-.barraNavegacion{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+.barraNavegacion {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
 }
 
 .imagenes {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    text-align: center;
-    list-style-type: none;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
 }
 
-li p{
-    margin: 10px;
+li p {
+  margin: 10px;
 }
 
 .medieval {
-    flex-direction: column;
-    text-align: center;
-    margin: 5px;
-    border: solid;
-    flex-wrap: wrap;
-    width: 440px;
-    height: 980px;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+  border: solid;
+  flex-wrap: wrap;
+  width: 440px;
+  height: 980px;
 }
 
-.medieval img{
-    width: 80%;
-    height: 40%;
+.medieval img {
+  width: 80%;
+  height: 40%;
 }
-.medieval iframe{
-    width: 80%;
-    height: 30%;
+
+.medieval iframe {
+  width: 80%;
+  height: 30%;
 }
 
 .titulo {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 .tituloAnime {
-    text-align: center;
+  text-align: center;
 }
 
 .lineado {
-    padding: 2px;
-    background-color: #35a9e2;
-    border-color: #35a9e2;
-    margin-top: 25px;
+  padding: 2px;
+  background-color: #35a9e2;
+  border-color: #35a9e2;
+  margin-top: 25px;
 }
 
 .pieDePagina {
-    display: flex;
+  display: flex;
+}
 
+.pieDePaginaLogo {
+  width: 25px;
+  height: 25px;
 }
 
 .siguenos {
-    display: flex;
-    justify-content: right;
+  display: flex;
+  justify-content: right;
 }
 
 .tabla {
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 .tabla,
 th,
 td {
-    border: 1px solid blanchedalmond;
-    border-collapse: collapse;
+  border: 1px solid blanchedalmond;
+  border-collapse: collapse;
 }
 
 .th,
 td {
-    padding: 05px;
+  padding: 5px;
 }
 
 .galerias {
-    display: inline-flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    margin: 100px;
-    justify-content: space-around;
+  display: inline-flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: 100px;
+  justify-content: space-around;
 }
 
 .mangaGaleria {
-    border: solid 1px whitesmoke;
-    width: 25%;
-    flex-direction: row;
-    margin: 10px;
-    
+  border: solid 1px whitesmoke;
+  width: 25%;
+  flex-direction: row;
+  margin: 10px;
 }
 
 .imagenGaleria {
-    width: 100%;
+  width: 100%;
 }
 
-#sipnosis{
-    flex-direction: column;
-    margin: 10px;
-    padding: 5px;
+#sipnosis {
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
 }
 
 .cuadro {
-    border: solid 1px whitesmoke;
-    width: 335px;
-    flex-direction: row;
-    margin: 15px auto;
+  border: solid 1px whitesmoke;
+  width: 335px;
+  flex-direction: row;
+  margin: 15px auto;
 }
 
-.contacto{
-    margin: 10px;
-
+.contacto {
+  margin: 10px;
 }
 
-.dropdown{
-    display: inline-block;
-    position: relative;
-    justify-content: center;
+.dropdown {
+  display: inline-block;
+  position: relative;
+  justify-content: center;
 }
 
-.dropdown:hover .dropdown-content{
-    display: block;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.dropdown-content{
-    display: none;
-    position: absolute;
-    width: 100%;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: greenyellow;
+  background-color: #35a9e2;
+}
+
+#boton {
+  background-color: #35a9e2;
+  color: aliceblue;
+  margin: 100px 30px 5px 100px;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.carrusel {
+  width: 50%;
+  height: 70%;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+.carrusel ul {
+  display: flex;
+  animation: cambio 10s infinite alternate linear;
+  width: 350%;
+}
+
+#carruselTamano {
+  width: 100%;
+  list-style-type: none;
+  margin: 25px;
+}
+
+.carrusel img {
+  height: 100%;
+  width: 80%;
+  margin: 25px;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.introducion {
+  display: grid;
+  grid-template-areas: "titulo titulo" "carrusel carrusel" "anime manga";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 55% 35%;
+  margin-bottom: 30%;
+}
+
+.introducion h1 {
+  grid-area: titulo;
+}
+
+.carrusel {
+  grid-area: carrusel;
+}
+
+.parrafoUno {
+  grid-area: anime;
+  border: solid 1px black;
+  margin: 5px;
+  padding: 10px;
+  height: max-content;
+  justify-content: center;
+  font-size: 14.5px;
+}
+
+.parrafoDos {
+  grid-area: manga;
+  border: solid 1px black;
+  margin: 5px;
+  padding: 10px;
+  justify-content: center;
+  height: max-content;
+}
+
+/* Responsive celulares */
+@media screen and (max-width: 800px) {
+  .barraNavegacion {
+    display: none;
+  }
+  .navegacion_movile {
+    display: inline-flex;
+    width: 100%;
+  }
+  .menu_desplegable {
+    display: inline-flexbox;
+    position: relative;
+  }
+  .menu_burger {
+    display: none;
+    position: absolute;
+    width: 500%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  }
+  .menu_desplegable:hover .menu_burger {
+    display: block;
+    background: aliceblue;
+  }
+  .menu_burger a {
     display: block;
     color: #000000;
     padding: 5px;
     text-decoration: none;
-}
-
-.dropdown-content a:hover{
-    color: greenyellow;
-    background-color: #35a9e2;
-}
-
-#boton{
-    background-color: #35a9e2;
-    color: aliceblue;
-    margin: 100px 30px 5px 100px;
-    padding: 10px;
-    flex-direction: column
-}
-
-.carrusel{
-    width: 50%; height: 70%; overflow: hidden; margin: 0px auto;
-}
-
-.carrusel ul{ display: flex;     animation:cambio 10s infinite alternate linear;width: 350%; 
-}  
-
-.carrusel li{ width: 100%; list-style-type: none;   
-} 
-
-.carrusel img{ height: 100%; width: 80%; margin: 25px;
-} 
-
-@keyframes cambio{ 
-    0%{ margin-left: 0%;}     
-    20%{ margin-left: 0%;}     
-    25%{ margin-left: -100%;}     
-    45%{ margin-left: -100%;}     
-    50%{ margin-left: -200%;}     
-    70%{ margin-left: -200%;}     
-    75%{ margin-left: -300%;}     
-    100%{ margin-left: -300%;} 
-}
-
-.introducion{
+  }
+  .menu_burger a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+  .carrusel {
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+  }
+  .carrusel ul {
+    display: flex;
+    animation: cambio 10s infinite alternate linear;
+    width: 350%;
+  }
+  .carrusel li {
+    width: 100%;
+    list-style-type: none;
+  }
+  .carrusel img {
+    height: 100%;
+    width: 80%;
+    margin: 25px;
+  }
+  @keyframes cambio {
+    0% {
+      margin-left: 0%;
+    }
+    20% {
+      margin-left: 0%;
+    }
+    25% {
+      margin-left: -100%;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    50% {
+      margin-left: -200%;
+    }
+    70% {
+      margin-left: -200%;
+    }
+    75% {
+      margin-left: -300%;
+    }
+    100% {
+      margin-left: -300%;
+    }
+  }
+  .introducion {
     display: grid;
-    grid-template-areas: 
-    "titulo titulo"
-    "carrusel carrusel"
-    "anime manga";
+    grid-template-areas: "titulo titulo" "carrusel carrusel" "manga manga" "anime anime";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 55% 35%;
+    grid-template-rows: 5% 55% 20% 20%;
     margin-bottom: 30%;
-}
-.introducion h1{
+  }
+  .introducion h1 {
     grid-area: titulo;
-}
-
-.carrusel{
+  }
+  .carrusel {
     grid-area: carrusel;
-}
-
-.parrafoUno{
-    grid-area: anime; border: solid 1px
-    black; 
-    margin: 05px;
+  }
+  .parrafoUno {
+    grid-area: anime;
+    border: solid 1px black;
+    margin: 20px;
     padding: 10px;
-    height: max-content;
-    justify-content: center;
-    font-size: 14.5px;
-}
-
-.parrafoDos{
+  }
+  .parrafoDos {
     grid-area: manga;
-    border: solid 1px black; 
-    margin: 05px;
+    border: solid 1px black;
+    margin: 20px;
     padding: 10px;
-    justify-content: center;
-    height: max-content;
-}
-
-/* Responsive celulares */
-@media screen and (max-width:800px){
-    .barraNavegacion{
-        display: none;
-    }
-    .navegacion_movile {
-        display: inline-flex;
-        width: 100%;
-    }
-    .menu_desplegable {
-        display: inline-flexbox;
-        position: relative;
-    }
-    .menu_burger {
-        display: none;
-        position: absolute;
-        width: 500%;
-        overflow: auto;
-        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-    }
-    .menu_desplegable:hover .menu_burger {
-        display: block; background: aliceblue;
-    }
-    .menu_burger a {
-        display: block;
-        color: #000000;
-        padding: 5px;
-        text-decoration: none;
-    }
-    .menu_burger a:hover {
-        color: #FFFFFF;
-        background-color: #00A4BD;
-    }
-    .carrusel{
-        width: 50%; height: 50%; overflow: hidden; margin: 0px auto;
-    }
-    
-    .carrusel ul{ display: flex;     animation:cambio 10s infinite alternate linear;width: 350%; 
-    }  
-    
-    .carrusel li{ width: 100%; list-style-type: none;   
-    } 
-    
-    .carrusel img{ height: 100%; width: 80%; margin: 25px;
-    } 
-    
-    @keyframes cambio{ 
-        0%{ margin-left: 0%;}     
-        20%{ margin-left: 0%;}     
-        25%{ margin-left: -100%;}     
-        45%{ margin-left: -100%;}     
-        50%{ margin-left: -200%;}     
-        70%{ margin-left: -200%;}     
-        75%{ margin-left: -300%;}     
-        100%{ margin-left: -300%;} 
-    }
-    
-    .introducion{
-        display: grid;
-        grid-template-areas: 
-        "titulo titulo"
-        "carrusel carrusel"
-        "manga manga"
-        "anime anime";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 5% 55% 20% 20%;
-        margin-bottom: 30%;
-    }
-    .introducion h1{
-        grid-area: titulo;
-    }
-    
-    .carrusel{
-        grid-area: carrusel;
-    }
-    
-    .parrafoUno{
-        grid-area: anime; border: solid 1px
-        black; 
-        margin: 20px;
-        padding: 10px;
-    }
-    
-    .parrafoDos{
-        grid-area: manga;
-        border: solid 1px black; 
-        margin: 20px;
-        padding: 10px;
-        
-        
-    }
-    .imagenes{
-        flex-wrap: wrap;
-        display: inline-flex;
-        text-align: center;
-    }
-    .medieval, .mangaGaleria{
-        width: fit-content;
-        margin: 5px;
-        justify-content: center;
-
-    }
-
-    .medieval img{
-        width: 80%;
-        height: 40%;
-    }
-    .medieval iframe{
-        width: 80%;
-        height: 30%;
-    }
-
-    .menu_desplegable img{
-        width: 30px;
-        height: 30px;
-    }
-
-
-}
-
-#tituloGal a{
+  }
+  .imagenes {
+    flex-wrap: wrap;
+    display: inline-flex;
     text-align: center;
-    text-decoration: none;
-    color: #000000;
-    text-emphasis-color: black;
+  }
+  .medieval, .mangaGaleria {
+    width: fit-content;
+    margin: 5px;
+    justify-content: center;
+  }
+  .medieval img {
+    width: 80%;
+    height: 40%;
+  }
+  .medieval iframe {
+    width: 80%;
+    height: 30%;
+  }
+  .menu_desplegable img {
+    width: 30px;
+    height: 30px;
+  }
+}
+#tituloGal a {
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  text-emphasis-color: black;
 }
 
-#tituloGal:hover a{
-    color: greenyellow;
+#tituloGal:hover a {
+  color: greenyellow;
 }
+
+/*# sourceMappingURL=style.css.map */
