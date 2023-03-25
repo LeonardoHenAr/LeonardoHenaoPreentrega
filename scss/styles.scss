@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* variables colores**/
+$color_1: whitesmoke;
+$color_2: white;
+$color_3: greenyellow;
+$color_4: black;
+$color_5: #000000;
+$color_6: aliceblue;
+$color_7: #FFFFFF;
+$font-family_1: 'Roboto', sans-serif;
+$font-family_2: sans-serif;
+$background-color_1: darkgoldenrod;
+$background-color_2: #35a9e2;
+$background-color_3: #00A4BD;
+$border-color_1: #35a9e2;
+
+/*elementos de estilos para todas las paginas**/
+
+
+body {
+    background-color: $background-color_1;
+    padding: 2px;
+}
+
+h1, h2{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+p {
+    font-family: $font-family_1;
+    font-weight: bold;
+    font-style: normal;
+    text-align: justify;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color: $color_1;
+}
+
+li p{
+    margin: 10px;
+}
+
+@mixin display-justify-text{
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+    border: solid;
+    flex-wrap: wrap;
+    width: 440px;
+    height: 980px;
+}
+
+@mixin font-family-justify-center{
+    border: solid 1px black; 
+    margin: 05px;
+    padding: 10px;
+    justify-content: center;
+    height: max-content;
+}
+
+/* css para header y footer */
+
+header {
+    padding: 10px;
+    background-color: $background-color_2;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: sticky;
+    top: 1px;
+}
+.barraNavegacion{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nombrePagina{
+    position: fixed;
+    left: 12px;
+    font-size: 20px;
+    font-family: $font-family_2;
+    color: $color_2;
+    text-decoration: none;
+}
+
+.menu {
+    text-decoration: none;
+    flex-direction: column;
+    color: $color_2;
+    position: relative;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 25px;
+    padding: 5px;
+    cursor: pointer;
+    &:hover {
+        color: $color_3;
+    }
+    
+}
+
+.siguenos {
+    display: flex;
+    justify-content: right;
+    justify-self: baseline;
+    border-top: solid 3px cyan;
+}
+
+.pieDePaginaLogo{
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+.navegacion_movile{
+    display: none;
+    
+
+}
+/*css para index*/
+
+@keyframes cambio{ 
+    0%{ margin-left: 0%;}     
+    20%{ margin-left: 0%;}     
+    25%{ margin-left: -100%;}     
+    45%{ margin-left: -100%;}     
+    50%{ margin-left: -200%;}     
+    70%{ margin-left: -200%;}     
+    75%{ margin-left: -300%;}     
+    100%{ margin-left: -300%;} 
+}
+
+.introducion{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "carrusel carrusel"
+    "anime manga";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 55% 35%;
+    margin-bottom: 30%;
+}
+.introducion h1{
+    grid-area: titulo;
+}
+
+.carrusel{
+    grid-area: carrusel;
+}
+
+.parrafoUno{
+    grid-area: anime; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: $color_1;
+    @include font-family-justify-center;
+    border: solid 1px white;
+}
+
+.parrafoDos{
+    grid-area: manga;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $color_1;
+    @include font-family-justify-center;
+    border: solid 1px white;
+}
+
+
+
+.carrusel{
+    width: 50%; height: 70%; overflow: hidden; margin: 0px auto;
+}
+
+.carrusel ul{ display: flex;     animation:cambio 10s infinite alternate linear; width: 350%; 
+}  
+
+#carruselTamano{ width: 100%; list-style-type: none; 
+    margin: 25px
+} 
+
+.carrusel img{ height: 100%; width: 80%; margin: 25px;
+} 
+
+/*estilos de paginas de anime y manga**/
+
+
+.animeGeneral{
+    .imagenes {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        text-align: center;
+        list-style-type: none;
+        .medieval {
+            @include display-justify-text;
+            .imagen{
+                width: 80%;
+                height: 40%;
+            }
+            .tituloAnime {
+                text-align: center;
+                .enlaceExterno {
+                    Text-decoration: none;
+                    color: $color_4;
+                    &:hover{color: $color_3;}
+                }
+                #sipnosis{
+                    flex-direction: column;
+                    margin: 10px;
+                    padding: 5px;
+                }
+                .video{
+                    width: 80%;
+                    height: 30%;
+                }
+            }
+        }
+    }
+}
+
+.tablaInformacion{
+    .tabla {
+        display: flex;
+        justify-content: center;
+        .tabla, th, td {
+            border: 1px solid blanchedalmond;
+            border-collapse: collapse;
+        }
+        .th, td {
+        padding: 05px;
+        }
+    }
+}
+
+/*estilos de pagina galeria**/
+
+.galerias {
+    display: inline-flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 100px;
+    justify-content: space-around;
+}
+
+.mangaGaleria {
+    border: solid 1px whitesmoke;
+    width: 25%;
+    flex-direction: row;
+    margin: 10px;
+    
+}
+
+.imagenGaleria {
+    width: 100%;
+}
+
+#tituloGal a{
+    text-align: justify;
+    text-decoration: none;
+    color: $color_5;
+    text-emphasis-color: black;
+}
+
+#tituloGal:hover a{
+    color: $color_3;
+}
+
+
+
+/*estilos para pagina novedades**/
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+    justify-content: center; 
+    height: 600px;
+    margin: 100px;
+    &:hover {
+		.dropdown-content {
+			display: block;
+		}
+	}
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .dropdown-content a {
+        display: block;
+        color: $color_5;
+        padding: 5px;
+        text-decoration: none;
+        &:hover {
+			color: $color_3;
+			background-color: $background-color_2;
+		}
+    }
+    
+}
+
+#boton{
+    background-color: $background-color_2;
+    color: $color_6;
+    margin: 100px 30px 5px 100px;
+    padding: 10px;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+/*estilos de pagina contacto**/
+
+.contacto{
+    margin: 10px;
+
+}
+
+/* Responsive celulares */
+@media screen and (max-width:800px){
+    .barraNavegacion{
+        display: none;
+    }
+    .navegacion_movile {
+        display: inline-flex;
+        width: 100%;
+    }
+    .menu_desplegable {
+        display: inline-flexbox;
+        position: relative;
+    }
+    .menu_burger {
+        display: none;
+        position: absolute;
+        width: 500%;
+        overflow: auto;
+        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    }
+    .menu_desplegable:hover .menu_burger {
+        display: block; background: aliceblue;
+    }
+    .menu_burger a {
+        display: block;
+        color: $color_5;
+        padding: 5px;
+        text-decoration: none;
+    }
+    .menu_burger a:hover {
+        color: #FFFFFF;
+        background-color: #00A4BD;
+    }
+    .carrusel{
+        width: 85%; height: 85%; overflow: hidden; margin: 0px auto;
+    }
+    
+    .carrusel ul{ display: flex;     animation:cambio 10s infinite alternate linear;width: 350%; 
+    }  
+    
+    .carrusel li{ width: 100%; list-style-type: none;   
+    } 
+    
+    .carrusel img{ height: 100%; width: 80%; margin: 25px;
+    } 
+    
+    @keyframes cambio{ 
+        0%{ margin-left: 0%;}     
+        20%{ margin-left: 0%;}     
+        25%{ margin-left: -100%;}     
+        45%{ margin-left: -100%;}     
+        50%{ margin-left: -200%;}     
+        70%{ margin-left: -200%;}     
+        75%{ margin-left: -300%;}     
+        100%{ margin-left: -300%;} 
+    }
+    
+    .introducion{
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo"
+        "carrusel carrusel"
+        "manga manga"
+        "anime anime";
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 30% 32.5% 32.5%;
+    }
+    .introducion h1{
+        grid-area: titulo;
+    }
+    
+    .carrusel{
+        grid-area: carrusel;
+    }
+    
+    .parrafoUno{
+        grid-area: anime; border: solid 1px
+        white; 
+        margin: 20px;
+        padding: 5px;
+        
+    }
+    
+    .parrafoDos{
+        grid-area: manga;
+        border: solid 1px white; 
+        margin: 20px;
+        padding: 5px;
+        
+    }
+    .explicasion{
+        border-bottom: solid;
+    }
+    .imagenes{
+        flex-wrap: wrap;
+        display: inline-flex;
+        text-align: center;
+    }
+    .medieval, .mangaGaleria{
+        width: fit-content;
+        margin: 5px;
+        justify-content: center;
+    }
+
+    .medieval img{
+        width: 80%;
+        height: 40%;
+    }
+    .medieval iframe{
+        width: 80%;
+        height: 30%;
+    }
+
+    .menu_desplegable img{
+        width: 30px;
+        height: 30px;
+    }
+}
